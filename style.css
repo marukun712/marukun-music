@@ -5,7 +5,7 @@
     background-color: rgb(230, 230, 230);
     background-blend-mode: multiply,multiply;
     max-width: 30vh;
-    height: 100vh;
+    height: 180vh;
     color: white;
     font-size: large;
     font-family: 'Montserrat', sans-serif;
@@ -58,6 +58,8 @@ font-family: 'Montserrat', sans-serif;
   .card{
     width: 250px;
     height: auto;
+    float: left;
+    margin: 15px;
   }
   .card__imgframe{
     width: 100%;
