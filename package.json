@@ -1,0 +1,25 @@
+{
+  "name": "marukun-music",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marukun712/marukun-music.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marukun712/marukun-music/issues"
+  },
+  "homepage": "https://github.com/marukun712/marukun-music#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "passport": "^0.5.2",
+    "passport-github2": "^0.1.12"
+  }
+}
