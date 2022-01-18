@@ -18,7 +18,7 @@
     </div>
     <div class="main">
     <div class="card card-skin">
-        <div class="card__imgframe" style="background:url(https://yt3.ggpht.com/roGS60A8a_lDbVakIg1JU3u3hbtjHSTilMGHMizuPKh7tuoY2nl46raxuW2f_83IKFGMjL6Z=s256)"><a href="https://marukunserver.ml/marukun-music/music/ymd/ymd.wav"><img src="https://icooon-mono.com/i/icon_15443/icon_154430_256.png" width="63" height="63"></a></div>
+        <div class="card__imgframe" style="background:url(https://yt3.ggpht.com/roGS60A8a_lDbVakIg1JU3u3hbtjHSTilMGHMizuPKh7tuoY2nl46raxuW2f_83IKFGMjL6Z=s256)"><a href="music/ymd/video/player.html"><img src="https://icooon-mono.com/i/icon_15443/icon_154430_256.png" width="63" height="63"></a></div>
 
         <div class="card__textbox">
           <div class="card__titletext">
@@ -29,20 +29,6 @@
           </div>
         </div>
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-<video id="video" controls width="640" height="360"></video>
-<script>
-  var video = document.getElementById('video');
-  var videoSrc = 'https://marukunserver.ml/marukun-music/music/ymd/ymd-song.m3u8';
-  if (Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource(videoSrc);
-    hls.attachMedia(video);
-  }
-  else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = videoSrc;
-  }
-</script>
     </div>
     <style>
         body{
