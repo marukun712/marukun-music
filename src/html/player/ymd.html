@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/nav.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>YMD-Song</title>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="sidebar">
+            <nav>
+                <div class="navbar">
+                    <div class="container nav-container">
+                        <input class="checkbox" type="checkbox" name="" id="" />
+                        <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </div>
+
+                        <div class="menu-items">
+                            <li><a href="/src/html/index.html">Home</a></li>
+                            <li><a href="/src/html/livestream.html">Livestream</a></li>
+                            <li><a href="/src/html/stream.html">streaming</a></li>
+                            <li><a href="https://github.com/marukun712/marukun-music">github</a></li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="main">
+            <video id="video" autoplay controls width="720" height="420" style="margin: 20vw;"></video>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+        <script>
+            var video = document.getElementById('video');
+            var videoSrc = 'https://marukunserver.ml/video/ymd-song-movie.m3u8';
+            if (Hls.isSupported()) {
+                var hls = new Hls();
+                hls.loadSource(videoSrc);
+                hls.attachMedia(video);
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = videoSrc;
+            }
+        </script>
+    </div>
+    <style>
+        body {
+            background-size: 250vh;
+            background-repeat: no-repeat;
+            background-image: url(/src/music/ymd/ymd.jpg);
+        }
+    </style>
+</body>
+
+</html
